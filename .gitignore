@@ -1,0 +1,16 @@
+# 使用记录（含个人使用历史）
+state.json
+
+# 构建缓存与中间产物（体积大 / 可由 build_pool.py 重新生成）
+build/stage1.json
+build/candidates.json
+build/pool_raw.json
+
+# 原始划线数据（体积大，未随仓库分发）
+data/quotes_final.json
+data/quotes_final.bak.json
+
+# 系统
+.DS_Store
+__pycache__/
+*.pyc
