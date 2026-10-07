@@ -82,11 +82,12 @@ def pick(quotes, n, tags=None, book=None, avoid=None):
 
 
 def fmt(q):
+    """输出：分割线收束正文 + 整行斜体加粗金句。"""
     author = (q.get("author") or "").strip()
     tail = "《%s》" % q["book"]
     if author:
         tail += " %s" % author
-    return "> 「%s」——%s" % (q["text"], tail)
+    return "---\n\n***「%s」——%s***" % (q["text"], tail)
 
 
 def main():
